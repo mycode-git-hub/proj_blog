@@ -1,0 +1,12 @@
+
+{% extends 'base.html'%}
+
+{% block content %}
+
+    <!-- By default DetailView will provide a context object we can use in our template called either object or the lowercased name of our model, which would be post. -->
+    <div class="post-entry">
+      <h2>{{post.title}}</h2>
+      <p>{{post.body}}</p>
+    </div>
+
+{% endblock content %}
